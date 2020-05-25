@@ -100,6 +100,6 @@ df.shape
 
 # In[11]:
 
-
+df.dropna(inplace=True)
 df.to_csv("base_de_dados.csv", sep = ";", index = False) ## não salva o indice 
 
