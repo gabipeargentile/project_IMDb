@@ -42,7 +42,7 @@ list(database.columns)
 
 df1 = database[(database["reviews_from_critics"].notnull()) & (database["reviews_from_users"].notnull())]
 df1.reset_index(drop = True, inplace = True)  ## resetando o indice das linhas
-df1.drop(columns = ["usa_gross_income", "duration", "writer"], axis = "columns", inplace = True) ## excluindo colunas
+df1.drop(columns = ["usa_gross_income", "writer"], axis = "columns", inplace = True) ## excluindo colunas
 df1
 
 
